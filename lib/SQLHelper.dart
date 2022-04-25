@@ -70,7 +70,7 @@ class SQLHelper {
     try {
       await db.delete("items", where: "id = ?", whereArgs: [id]);
     } catch (err) {
-      debugPrint("  wrong when deleting an item: $err");
+      debugPrint("   when deleting an item: $err");
     }
   }
 }

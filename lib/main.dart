@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
   void _deleteItem(int id) async {
     await SQLHelper.deleteItem(id);
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-      content: Text('Successfully deleted a journal!'),
+      content: Text('Successfully deleted a journal Con!'),
     ));
     _refreshJournals();
   }
